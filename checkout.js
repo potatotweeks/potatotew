@@ -33,9 +33,7 @@ document.getElementById("paymentForm").addEventListener("submit", function (even
         event.preventDefault();
         return;
     }
+
+    window.location.href = "aftercheckout.html";
 });
 
-function complete()
-{
-    window.location.href = "aftercheckout.html";
-}
