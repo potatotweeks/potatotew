@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thank You for Your Purchase!</title>
+    <link rel="stylesheet" href="aftercheckout.css"> <!-- Link to external CSS -->
+    <!-- Optionally include a Google Font for improved typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="thank-you-container">
+        <h1 class="thank-you-title">Thank You for Your Purchase!</h1>
+        <p class="thank-you-message">Your order has been successfully placed.</p>
+
+        <div class="order-details">
+            <p class="order-number">Order Number: <strong>123456</strong></p>
+            <p>We've sent a confirmation email to your registered email address.</p>
+        </div>
+
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <ul>
+                <li>Product A - Quantity: 2</li>
+                <li>Product B - Quantity: 1</li>
+            </ul>
+        </div>
+
+        <div class="thank-you-actions">
+            <button class="btn btn-primary" onclick="returnToShop()">Continue Shopping</button>
+        </div>
+    </div>
+
+    <script>
+        function returnToShop() {
+            window.location.href = '/';
+        }
+
+    </script>
+</body>
+</html>
