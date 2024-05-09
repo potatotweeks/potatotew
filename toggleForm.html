@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            max-width: 100%;
+        }
+
+        h2 {
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .switch-form {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .switch-form a {
+            color: #3498db;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="login-form">
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="login()">Login</button>
+
+        <div class="switch-form">
+            <p>Don't have an account? <a href="#" onclick="toggleForm('register')">Register here</a></p>
+        </div>
+    </form>
+
+    <form id="register-form" style="display:none;">
+        <h2>Register</h2>
+        <label for="new-username">Username:</label>
+        <input type="text" id="new-username" name="new-username" required>
+
+        <label for="new-password">Password:</label>
+        <input type="password" id="new-password" name="new-password" required>
+
+        <button type="button" onclick="register()">Register</button>
+
+        <div class="switch-form">
+            <p>Already have an account? <a href="#" onclick="toggleForm('login')">Login here</a></p>
+        </div>
+    </form>
+
+    <script>
+        function toggleForm(formType) {
+            if (formType === 'register') {
+                document.getElementById('login-form').style.display = 'none';
+                document.getElementById('register-form').style.display = 'block';
+            } else {
+                document.getElementById('login-form').style.display = 'block';
+                document.getElementById('register-form').style.display = 'none';
+            }
+        }
+
+        function login() {
+            // Add logic for handling login, e.g., check credentials
+            alert("Logged in successfully!");
+            window.location.href = "index.html"; // Redirect to index.html
+        }
+
+        function register() {
+            // Add logic for handling registration, e.g., store user details
+            alert("Registered successfully! You can now log in.");
+            window.location.href = "index.html"; // Redirect to index.html
+        }
+    </script>
+
+</body>
+
+</html>
+

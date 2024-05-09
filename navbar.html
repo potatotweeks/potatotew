@@ -1,0 +1,17 @@
+<!-- navbar.html -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <button onclick="viewCart()">View Cart</button>
+</nav>
+<div id="navbar-container" style="margin-bottom: 20px;"></div>
+<script>
+    // Fetch and inject the navbar content
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-container').innerHTML = data;
+        });
+</script>
