@@ -22,7 +22,7 @@
         }
 
         nav {
-            background-color: #333; /* Darker blue navigation background */
+            background-color: #2980b9; /* Darker blue navigation background */
             color: #fff;
             padding: 10px;
             text-align: center;
@@ -39,8 +39,7 @@
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            padding: 10px 60px ;
-        
+            padding: 20px;
             border: 2px solid #000; /* Black border */
             margin: 20px;
         }
@@ -50,17 +49,22 @@
         }
 
         .product {
-            border:  none #000; /* Black border */
+            border: 2px solid #000; /* Black border */
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 8px;
-            transition: transform 0.5s ease-in-out;
+            transition: transform 0.3s ease-in-out;
         }
 
         .product:hover {
             transform: scale(1.05); /* Scale up on hover */
-            background-color: rgba(214, 209, 209, 0.884);
-          
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
         }
 
         h3 {
@@ -102,11 +106,11 @@
         }
 
         .download-button:hover {
-            background-color: #333;
+            background-color: #2980b9;
         }
 
         footer {
-            background-color: #333; /* Blue footer background */
+            background-color: #3498db; /* Blue footer background */
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -132,8 +136,9 @@
         <h2>Our Products 🎮</h2>
 
         <div class="Best product" id="product1">
+            <img src="Duty.jpg" alt="Product 1">
             <h3>Potato Tweek </h3>
-            <p>Description of Product 1. Much more Tweeks. </p>
+            <p>Description of Product 1. Much more Tweeks. 🌟</p>
             <button class="action-button" onclick="addToCart('Product 1')">Add to Cart</button>
         </div>
         <script>
@@ -159,6 +164,7 @@
 
 
         <div class=" Free product" id="product2">
+            <img src="product2.jpg" alt="Product 2">
             <h3>Free Potato Tweek</h3>
             <p>Description of Product 2. Free version with a little by little. 🕹️</p>
             <!-- New "Free Download" button -->
