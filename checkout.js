@@ -6,8 +6,7 @@ flatpickr("#expiryDate", {
     minDate: "today", // Disallow past dates
 });
 
-// Form validation
-document.getElementById("paymentForm").addEventListener("submit", function (event) {
+function validateForm() {
     const cardNumber = document.getElementById("cardNumber").value;
     const expiryDate = document.getElementById("expiryDate").value;
     const cvv = document.getElementById("cvv").value;
@@ -33,4 +32,11 @@ document.getElementById("paymentForm").addEventListener("submit", function (even
         event.preventDefault();
         return;
     }
-});
+}
+
+
+function checkout() {
+    validateForm();
+
+    window.location.href='./aftercheckout.html'
+}
