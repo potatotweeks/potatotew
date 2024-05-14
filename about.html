@@ -6,60 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website - About Us</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2; /* Light gray background */
-            color: #333; /* Dark text color */
-        }
-
-        header {
-            background-color: #4285f4; /* Google Blue */
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #333; /* Dark gray navigation background */
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        main {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            border: 2px solid #000; /* Black border */
-            margin: 20px;
-        }
-
-        h2 {
-            color: #4285f4; /* Google Blue heading color */
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        footer {
-            background-color: #333; /* Dark gray footer background */
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            margin-top: 20px;
-        }
+       
     </style>
+    <link rel="stylesheet" href="about.css">
 </head>
 
 <body>
@@ -73,6 +22,7 @@
         <a href="about.html">About Us</a>
         <a href="products.html">Products</a>
         <a href="contact.html">Contact</a>
+        <button class="action-button" onclick="viewCart()">View Cart</button>
     </nav>
 
     <main>
@@ -82,13 +32,17 @@
             Admin:Dukatev
             Moderator:Kolev
             This is link for my discord server.</p>
-            <a class="Join-button" href="Join-link-here" download>Join in our Discord</a>
+            <a class="Join-Group" href="https://discord.gg/zUHRqGHS" download>Join in our Discord</a>
     </main>
 
     <footer>
         <p>&copy; 2024 Your Website. All rights reserved.</p>
     </footer>
-
+<script>
+     function viewCart() {
+            window.location.href = "cart.html";
+        }
+</script>
 </body>
 
 </html>

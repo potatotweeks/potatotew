@@ -6,87 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Game Shop - Contact</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8; /* Light gray background */
-            color: #333; /* Dark text color */
-        }
-
-        header {
-            background-color: #3498db; /* Blue header background */
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #2980b9; /* Darker blue navigation background */
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        main {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin: 20px;
-        }
-
-        form {
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 10px;
-            text-align: left;
-            color: #555; /* Dark gray label text color */
-        }
-
-        input,
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            box-sizing: border-box;
-            border: 2px solid #3498db; /* Blue border */
-            border-radius: 4px;
-        }
-
-        button {
-            background-color: #3498db; /* Blue button background */
-            color: #fff;
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #2980b9; /* Darker blue on hover */
-        }
-
-        footer {
-            background-color: #3498db; /* Blue footer background */
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            margin-top: 20px;
-        }
+        
     </style>
+    <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
@@ -99,6 +21,7 @@
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="cart.html">Cart</a>
+        <button class="action-button" onclick="viewCart()">View Cart</button>
     </nav>
 
     <main>
@@ -121,7 +44,9 @@
     <footer>
         <p>&copy; 2024 Your Game Shop. All rights reserved.</p>
     </footer>
-
+<script>  function viewCart() {
+    window.location.href = "cart.html";
+}</script>
 </body>
 
 </html>

@@ -6,6 +6,12 @@ flatpickr("#expiryDate", {
     minDate: "today", // Disallow past dates
 });
 
+function checkout() {
+    validateForm();
+
+    window.location.href='./aftercheckout.html'
+}
+
 function validateForm() {
     const cardNumber = document.getElementById("cardNumber").value;
     const expiryDate = document.getElementById("expiryDate").value;
@@ -32,11 +38,4 @@ function validateForm() {
         event.preventDefault();
         return;
     }
-}
-
-
-function checkout() {
-    validateForm();
-
-    window.location.href='./aftercheckout.html'
 }

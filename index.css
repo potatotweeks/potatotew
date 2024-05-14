@@ -2,7 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #f8f8f8;
     color: #333;
 }
 
@@ -11,24 +11,26 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
+    border-bottom: 2px solid #2980b9;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1.2em;
 }
 
 nav {
     background-color: #333;
     color: #fff;
     padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav a {
@@ -36,6 +38,12 @@ nav a {
     color: #fff;
     font-weight: bold;
     font-size: 16px;
+    margin-right: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #27ae60;
 }
 
 main {
@@ -67,17 +75,17 @@ main {
 
 .product h2 {
     color: #333;
-    font-size: 20px;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
 .product p {
     color: #555;
-    font-size: 16px;
+    font-size: 1.2em;
     margin-bottom: 15px;
 }
 
-button {
+.action-button {
     background-color: #27ae60;
     color: #fff;
     padding: 10px 20px;
@@ -88,8 +96,24 @@ button {
     transition: background-color 0.3s ease-in-out;
 }
 
-button:hover {
+.action-button:hover {
     background-color: #219d54;
+}
+
+.download-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.download-button:hover {
+    background-color: #2980b9;
 }
 
 footer {
@@ -97,4 +121,46 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .product h2 {
+        font-size: 1.2em;
+    }
+
+    .product p {
+        font-size: 1em;
+    }
+
+    .action-button,
+    .download-button {
+        font-size: 14px;
+    }
+
+}
+.photo{
+    width: 300px;
+    height: auto;
+    border-radius: 60px;
+    }
