@@ -131,12 +131,22 @@
             padding: 20px;
             text-align: center;
             margin-top: 20px;
+            position:absolute ;
+            bottom: 0 ;
+            left: 0;
+            right: 0;
         }
 
         footer p {
             margin: 0;
         }
+        .photo{
+            height: 360px;
+            width:  auto;
+            border-radius: 60px;
 
+
+        }
         @media (max-width: 768px) {
             header h1 {
                 font-size: 1.5em;
@@ -182,26 +192,14 @@
     </nav>
 
     <main>
-        <!-- Sample Product Section -->
+        <img class="photo" src="photos/potatopc.webp" alt="potato pc">
         <section class="product" id="product1">
-            <img src="product-image.jpg" alt="Product Image">
             <h2>Potato Tweek</h2>
-            <p>Description of the product. One of the best Tweeks for every computer and Fortnite.</p>
+            <p>One of the best Tweeks for every computer and Fortnite.</p>
             <p>Price: $12.99</p>
             <!-- Updated button with onclick event -->
-            <button class="action-button" onclick="addToCart('product1')">Add to Cart</button>
+            <button class="action-button" onclick="addToCart('Potato Tweak')">Add to Cart</button>
         </section>
-
-        <section class="product2" id="product2">
-            <img src="Duty.jpg" alt="Product Image">
-            <h2>Potato Tweek Free</h2>
-            <p>Description of the product. One of the best Tweeks for every computer and Fortnite.</p>
-            <p>Price: $Free</p>
-            <!-- Updated button with onclick event -->
-            <a class="download-button" href="your-download-link-here" download>Free Download</a>
-        </section>
-    </main>
-
     <footer>
         <p>&copy; 2024 Potato TWEEKS. All rights reserved. 🚀</p>
     </footer>
