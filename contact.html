@@ -1,52 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Game Shop - Contact</title>
+        <style>
+            
+        </style>
+        <link rel="stylesheet" href="styles/contact.css">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Game Shop - Contact</title>
-    <style>
+    <body>
+        <header>
+            <h1>Your Game Shop</h1>
+        </header>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <button class="action-button" onclick="viewCart()">View Cart</button>
+        </nav>
+
+        <main>
+            <h2>Contact Us</h2>
+
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Your Game Shop. All rights reserved.</p>
+        </footer>
         
-    </style>
-    <link rel="stylesheet" href="styles/contact.css">
-</head>
-
-<body>
-
-    <header>
-        <h1>Your Game Shop</h1>
-    </header>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="cart.html">Cart</a>
-        <button class="action-button" onclick="viewCart()">View Cart</button>
-    </nav>
-
-    <main>
-        <h2>Contact Us</h2>
-
-        <form>
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Your Game Shop. All rights reserved.</p>
-    </footer>
-<script>  function viewCart() {
-    window.location.href = "cart.html";
-}</script>
-</body>
+        
+        <script src="contact.js"></script>
+    </body>
 
 </html>
