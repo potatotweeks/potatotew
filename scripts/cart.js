@@ -1,19 +1,31 @@
-// Function to remove item from the cart
-function removeFromCart(productId) {
-    // Check if the product is in the cart
-    var cartItem = document.getElementById(productId);
+updateCart();
 
-    if (cartItem) {
-        // Remove the product from the cart
-        cartItem.remove();
-        alert("Product removed from the cart!");
-    } else {
-        alert("Product not found in the cart!");
+function updateCart(){
+    let cartItem = localStorage.getItem('cartItem');
+
+    let html = `<div class="cart-item" id="product1">
+        <img src="photos/potatopc.webp" alt="potato pc">
+        <div class="item-details">
+            <h1>Potato tweak</h1>
+        </div>
+        <button class="button" onclick="removeFromCart('product1')">Remove</button>
+    </div>`
+
+    if(cartItem === 'product1'){
+        document.querySelector('.products').innerHTML = html;
     }
 }
 
-// Function to proceed to checkout
+function removeFromCart(productId) {
+    let cartItem = document.querySelector('.cart-item');
+
+    if (cartItem) {
+        cartItem.remove();
+        localStorage.removeItem('cartItem')
+        alert("Product removed from the cart!");
+    }
+}
+
 function checkout() {
-    // Redirect to the checkout.html page
     window.location.href = "checkout.html";
 }
