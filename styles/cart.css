@@ -4,7 +4,7 @@ body{
     padding: 0;
     background-color: #f8f8f8;
     color: #333;
-    background-image: url(/photos/potato-removebg-preview.png);
+    background-image: url(https://potatotweeks.github.io/potatotweaks/photos/potato-removebg-preview.png);
     background-position: 150px;
     background-size: 100px;
     animation: mymove 10s infinite;
