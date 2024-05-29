@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <style>
+        
+    </style>
+    <link rel="stylesheet" href="styles/toggleForm.css">
+    <link rel="icon" type="png" href="photos/potatopc-modified.png">
+</head>
+
+<body>
+
+    <form id="login-form">
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="login()">Login</button>
+
+        <div class="switch-form">
+            <p>Don't have an account? <a href="#" onclick="toggleForm('register')">Register here</a></p>
+        </div>
+    </form>
+
+    <form id="register-form" style="display:none;">
+        <h2>Register</h2>
+        <label for="new-username">Username:</label>
+        <input type="text" id="new-username" name="new-username" required>
+
+        <label for="new-password">Password:</label>
+        <input type="password" id="new-password" name="new-password" required>
+
+        <button type="button" onclick="register()">Register</button>
+
+        <div class="switch-form">
+            <p>Already have an account? <a href="#" onclick="toggleForm('login')">Login here</a></p>
+        </div>
+    </form>
+
+    
+    <script src="scripts/toggleForm.js"></script>
+</body>
+
+</html>
+

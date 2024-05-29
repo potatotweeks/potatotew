@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Potato Tweaks - Home</title>
+
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="icon" type="png" href="photos/potatopc-modified.png">
+    </head>
+
+    <body>
+        <header>
+            <h1>Potato TWEAKS</h1>
+            <p>Explore our amazing tweaks for a better experience!</p>
+        </header>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact Us</a>
+            <!-- New "View Cart" button -->
+            <button class="action-button" onclick="viewCart()">View Cart</button>
+        </nav>
+
+        <main>
+            <!-- Sample Product Section -->
+            <img class="photo" src="photos/potatopc.webp" alt="Product Image">
+            <section class="product" id="product1">
+                <h2>Potato Tweak</h2>
+                <p>Description of the product. One of the best Tweaks for every computer.</p>
+                <p>Price: $12.99</p>
+                <!-- Updated button with onclick event -->
+                <button class="action-button" onclick="addToCart('product1')">Add to Cart</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Potato TWEAKS. All rights reserved.</p>
+        </footer>
+
+        <script src="scripts/script.js"></script>
+    </body>
+</html>

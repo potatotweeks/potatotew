@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato Tweaks - Your Cart</title>
+    <style>
+       
+    </style>
+    <link rel="stylesheet" href="styles/cart.css">
+    <link rel="icon" type="png" href="photos/potatopc-modified.png">
+</head>
+
+<body>
+
+    <header>
+        <h1>Your Shopping Cart</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact Us</a>
+        <button class="in-cart-button" onclick="viewCart()">View Cart</button>
+    </nav>
+
+    <main>
+        <img class="img" src="photos/potatopc.jpg" alt="Potato pc">
+
+        <!-- Cart Items -->
+        <h2>Your products:</h2>
+
+        <div class="cart-item" id="product1">
+            <img src="photos/potatopc.webp" alt="potato pc">
+            <div class="item-details">
+                <h1>Potato tweak</h1>
+            </div>
+            <button class="button" onclick="removeFromCart('product1')">Remove</button>
+        </div>
+
+        <!-- Add more cart items as needed -->
+
+        <!-- Checkout Button -->
+        <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Potato TWEAKS. All rights reserved.</p>
+    </footer>
+
+
+    <script src="scripts/cart.js"></script>
+</body>
+
+</html>

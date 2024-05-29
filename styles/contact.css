@@ -1,0 +1,125 @@
+body{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light gray background */
+    color: #333; /* Dark text color */
+    background-image: url(/photos/potato-removebg-preview.png);
+    background-position: 150px;
+    background-size: 100px;
+    animation: mymove 10s infinite;
+}
+
+@keyframes mymove{
+    from {background-position-y: 0px;}
+    to {background-position-y: 100%;}
+}
+
+header{
+    background-color: #3498db; /* Blue header background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover{
+    color: #27ae60;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #000;
+}
+
+.h2{
+    text-align: center;
+}
+
+form{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #555; /* Dark gray label text color */
+}
+
+input,
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 2px solid #3498db; /* Blue border */
+    border-radius: 4px;
+}
+
+button{
+    background-color: #0ea74e; /* Blue button background */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #219d54; /* Darker blue on hover */
+}
+
+footer{
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100px;
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 17px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.action-button{
+    background-color: #27ae60;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
