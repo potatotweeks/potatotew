@@ -7,12 +7,22 @@ body{
     background-image: url(https://potatotweeks.github.io/potatotweaks/photos/potato-removebg-preview.png);
     background-position: 150px;
     background-size: 100px;
-    animation: mymove 10s infinite;
+    animation: mymove 15s ease-in-out infinite;
 }
 
 @keyframes mymove{
-    from {background-position-y: 0px;}
-    to {background-position-y: 100%;}
+    0% {
+        background-position-y: 0px;
+    }
+
+    50% {
+        background-position-y: 100%;
+        background-position-x: 25%;
+    }
+
+    100% {
+        background-position-y: 0px;
+    }
 }
 
 header{

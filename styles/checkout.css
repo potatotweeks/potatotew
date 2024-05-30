@@ -6,12 +6,21 @@ body{
     background-image: url(https://potatotweeks.github.io/potatotweaks/photos/potatocoins-removebg-preview.png), url(https://potatotweeks.github.io/potatotweaks/photos/pixlr-image-generator-825721d9-d00d-4924-a92b-177223993962-removebg-preview.png);
     background-size: 150px 150px, 50px 50px;
     background-repeat: repeat, repeat;
-    animation: mymove 10s infinite;
+    animation: mymove 15s ease-in-out infinite;
 }
 
 @keyframes mymove{
-    from{background-position-y: 100%;}
-    to{background-position-y: 0px;}
+    0% {
+        background-position-y: 0px;
+    }
+
+    50% {
+        background-position-y: 100%;
+    }
+
+    100% {
+        background-position-y: 0px;
+    }
 }
 
 h1{

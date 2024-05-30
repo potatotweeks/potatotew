@@ -16,7 +16,7 @@ function updateCart(){
     }
 }
 
-function removeFromCart(productId) {
+function removeFromCart() {
     let cartItem = document.querySelector('.cart-item');
 
     if (cartItem) {
