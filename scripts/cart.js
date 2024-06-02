@@ -1,31 +1,40 @@
+let cartItem = '';
+
+let html = `<div class="cart-item" id="product1">
+<img src="photos/potatopc.webp" alt="potato pc">
+<div class="item-details">
+    <h1>Potato tweak</h1>
+</div>
+<button class="button" onclick="removeFromCart('product1')">Remove</button>
+</div>`
+
 updateCart();
 
 function updateCart(){
-    let cartItem = localStorage.getItem('cartItem');
-
-    let html = `<div class="cart-item" id="product1">
-        <img src="photos/potatopc.webp" alt="potato pc">
-        <div class="item-details">
-            <h1>Potato tweak</h1>
-        </div>
-        <button class="button" onclick="removeFromCart('product1')">Remove</button>
-    </div>`
+    cartItem = localStorage.getItem('cartItem');
 
     if(cartItem === 'product1'){
         document.querySelector('.products').innerHTML = html;
+        document.querySelector('.checkout-button').classList.remove('unclickable');
+    } else{
+        document.querySelector('.checkout-button').classList.add('unclickable');
     }
 }
 
 function removeFromCart() {
-    let cartItem = document.querySelector('.cart-item');
+    let cartItemElement = document.querySelector('.cart-item');
 
-    if (cartItem) {
-        cartItem.remove();
+    if (cartItemElement) {
+        cartItemElement.remove();
         localStorage.removeItem('cartItem')
         alert("Product removed from the cart!");
+        document.querySelector('.checkout-button').classList.add('unclickable');
+        cartItem = '';
     }
 }
 
 function checkout() {
-    window.location.href = "checkout.html";
+    if(cartItem === 'product1'){
+        window.location.href = "checkout.html";
+    }
 }
